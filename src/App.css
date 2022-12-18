@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.wapper {
+  display: flex;
+}
+
+.result-wapper {
+  display: flex;
+}
