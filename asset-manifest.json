@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//markpumpkin.github.io/mental-calculation/static/css/main.2f0e528e.css",
+    "main.js": "//markpumpkin.github.io/mental-calculation/static/js/main.8da048bd.js",
+    "static/js/787.2f02acde.chunk.js": "//markpumpkin.github.io/mental-calculation/static/js/787.2f02acde.chunk.js",
+    "index.html": "//markpumpkin.github.io/mental-calculation/index.html",
+    "main.2f0e528e.css.map": "//markpumpkin.github.io/mental-calculation/static/css/main.2f0e528e.css.map",
+    "main.8da048bd.js.map": "//markpumpkin.github.io/mental-calculation/static/js/main.8da048bd.js.map",
+    "787.2f02acde.chunk.js.map": "//markpumpkin.github.io/mental-calculation/static/js/787.2f02acde.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f0e528e.css",
+    "static/js/main.8da048bd.js"
+  ]
+}
