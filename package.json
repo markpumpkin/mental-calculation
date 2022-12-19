@@ -1,6 +1,6 @@
 {
   "homepage": "http://http://markpumpkin.github.io/mental-calculation",
-  "name": "abc",
+  "name": "mental-calculation",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
