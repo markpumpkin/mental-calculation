@@ -1,4 +1,5 @@
 import Addition from "./Addition";
+import Subtraction from "./Subtraction";
 import "./App.css";
 
 export const getRandomInt = (max: number) => {
@@ -8,9 +9,16 @@ export const getRandomInt = (max: number) => {
 function App() {
     return (
         <div className="App">
-            <h1>Mental Calculation</h1>
-            <div className="addition">
-                <Addition />
+            <h1>Mental Calculation of Random Number</h1>
+            <div className="container">
+                <div className="col addition">
+                    <h2>Addition</h2>
+                    <Addition />
+                </div>
+                <div className="col addition">
+                    <h2>Subtraction</h2>
+                    <Subtraction />
+                </div>
             </div>
         </div>
     );

@@ -1,11 +1,42 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.wapper {
+.container {
+  max-width: 950px;
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.wapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.col {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.total-done {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .result-wapper {
   display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.input-control {
+  border: 1px solid #959595;
+  border-radius: 4px;
+  height: 25px;
+  width: 100px;
 }

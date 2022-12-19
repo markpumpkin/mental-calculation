@@ -28,6 +28,7 @@ function Anser(props: { anser?: number; anserDone?: () => void }) {
     return (
         <span className="result-wapper">
             <input
+                className="input-control"
                 value={result}
                 type="number"
                 onChange={handleChange}

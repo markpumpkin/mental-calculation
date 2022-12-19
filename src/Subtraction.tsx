@@ -13,8 +13,8 @@ const Addition = () => {
 
     return (
         <div className="wapper">
-            {a} + {b} ={` `}
-            <Anser anser={a + b} anserDone={anserDone} />
+            {a} - {b} ={` `}
+            <Anser anser={a - b} anserDone={anserDone} />
             <span className="total-done">Total: {count} correct answers</span>
         </div>
     );
