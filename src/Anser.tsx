@@ -1,5 +1,5 @@
+import { useState, FormEvent, KeyboardEvent } from "react";
 import _ from "lodash";
-import { useState, FormEvent } from "react";
 
 function Anser(props: { anser?: number; anserDone?: () => void }) {
     const { anser, anserDone } = props;
@@ -12,8 +12,10 @@ function Anser(props: { anser?: number; anserDone?: () => void }) {
         else e && setResult(_.toNumber(e.currentTarget.value));
     };
 
-    const handleKeyDown = (e?: any) => {
-        if (e.code === "Enter") {
+    const handleKeyDown = (e?: KeyboardEvent<HTMLInputElement>) => {
+        console.log(e);
+
+        if (e?.code === "Enter" || e?.code === "NumpadEnter") {
             if (anser === result) {
                 setIsCorrect(true);
                 setTimeout(() => {
@@ -35,12 +37,7 @@ function Anser(props: { anser?: number; anserDone?: () => void }) {
                 onKeyDown={handleKeyDown}
             />
             {isCorrect && (
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    width="24"
-                    height="24"
-                >
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
                     <path d="M9.5,14.4393398 L16.9393398,7 C17.232233,6.70710678 17.7071068,6.70710678 18,7 C18.2928932,7.29289322 18.2928932,7.76776695 18,8.06066017 L9.5,16.5606602 L6,13.0606602 C5.70710678,12.767767 5.70710678,12.2928932 6,12 C6.29289322,11.7071068 6.76776695,11.7071068 7.06066017,12 L9.5,14.4393398 Z"></path>
                 </svg>
             )}
